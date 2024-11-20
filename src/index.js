@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000; // Render asigna el puerto mediante process.env.PORT
 
 let usuarios = [
     { id: 1, nombre: 'Juan Pérez', edad: 30 },
@@ -27,5 +27,5 @@ app.post('/api/usuarios', (req, res) => {
 
 // Servidor en ejecución
 app.listen(port, () => {
-    console.log(`Servidor ejecutándose en http://localhost:${port}`);
+    console.log(`Servidor ejecutándose en el puerto ${port}`);
 });
