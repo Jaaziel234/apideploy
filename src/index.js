@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const port = process.env.PORT || 3000; // Render asigna el puerto mediante process.env.PORT
+const port = process.env.PORT || 6000; // Render asigna el puerto mediante process.env.PORT
 
 let usuarios = [
     { id: 1, nombre: 'Juan Pérez', edad: 30 },
